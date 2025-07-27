@@ -1,7 +1,8 @@
 variable "ssh_key_name" {
   description = "The name of the SSH key pair to use for instances"
   type        = string
-  default     = "-----BEGIN RSA PRIVATE KEY-----
+  default     = <<EOT
+-----BEGIN RSA PRIVATE KEY-----
 MIIEogIBAAKCAQEAoM088Gcz67VJp766fUzC+vTs+KtbbZClOj8WE2YyJ0xj9wDI
 LUSz/XsWzfALj2IgVSbN/Lj7zCquCTd13b7+9olHLVPQ+66/JJjzRFIU4efLj9+g
 b2SuzVR5n7/8peHl/8d5XeruL6NH1GBmczgbs9TIE0hFytX0pDGDjQUhzc4mQUQS
@@ -27,5 +28,6 @@ sZG8vjpwDrnQmzU9BHMxcoMe9DzRMBHRbdJNu9aaBOMm0BHusbNmdudkvSf8YZG0
 OE8BAoGAJXGJ29J5XXE7hovepZigO1E9v5ccQ7XmVHlfiigaeOrkoQ/aeHG7Asf8
 fMI630lRjhe4WcI93047vhnrFXxY01FB26ZdD6cjsIJo/sez4zJJ2oQGfn1qv98y
 WN7TgGvzYW2bd49NXfHWcdNhBj4yGo3x+mIRRQdX+BILkQLzzk8=
------END RSA PRIVATE KEY-----"
+-----END RSA PRIVATE KEY-----
+EOT
 }
